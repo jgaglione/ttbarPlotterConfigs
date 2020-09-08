@@ -1,0 +1,136 @@
+luminosity 59740
+output out_StauLQ_2018_ttbar_newAnalyzer.root
+style cms
+
+../NanoAOD_Submission/Submission/allData.root          Data.root
+
+#DY and WJets all inclusive: 
+../NanoAOD_Submission/Submission/DYJetsToLL_M-50.root	    DY+Jets.root	6025.200       1.00		bg
+../NanoAOD_Submission/Submission/WJetsToLNu.root            W+Jets.root     61334.90       1.00     bg
+
+# DY+Jets M-50
+#../NanoAOD_Submission/Submission/DYJetsToLL_M-50_HT-70to100.root        DY+Jets.root     175.300  1.00     bg
+../NanoAOD_Submission/Submission/DYJetsToLL_M-50_HT-100to200.root        DY+Jets.root     213.400	1.00     bg
+../NanoAOD_Submission/Submission/DYJetsToLL_M-50_HT-200to400.root        DY+Jets.root     65.4200	1.00     bg
+../NanoAOD_Submission/Submission/DYJetsToLL_M-50_HT-400to600.root        DY+Jets.root     7.31000	1.00     bg
+../NanoAOD_Submission/Submission/DYJetsToLL_M-50_HT-600to800.root        DY+Jets.root     1.49000	1.00     bg
+../NanoAOD_Submission/Submission/DYJetsToLL_M-50_HT-800to1200.root       DY+Jets.root     0.66100	1.00     bg
+../NanoAOD_Submission/Submission/DYJetsToLL_M-50_HT-1200to2500.root      DY+Jets.root     0.11900	1.00     bg
+../NanoAOD_Submission/Submission/DYJetsToLL_M-50_HT-2500toInf.root       DY+Jets.root     0.00280	1.00     bg
+
+# DY+Jets M-4to50 (using xsec to LO from XSDB tool)
+../NanoAOD_Submission/Submission/DYJetsToLL_M-4to50_HT-100to200.root            DY+Jets.root     224.20          1.00     bg
+../NanoAOD_Submission/Submission/DYJetsToLL_M-4to50_HT-200to400.root            DY+Jets.root     37.200          1.00     bg
+../NanoAOD_Submission/Submission/DYJetsToLL_M-4to50_HT-400to600.root            DY+Jets.root     3.5810          1.00     bg
+../NanoAOD_Submission/Submission/DYJetsToLL_M-4to50_HT-600toInf.root            DY+Jets.root     1.1240          1.00     bg
+
+# QCD
+#../NanoAOD_Submission/Submission/QCD_Pt-15to20_MuEnrichedPt5.root 	QCD.root 	27990000.00	1.00	bg
+#../NanoAOD_Submission/Submission/QCD_Pt-20to30_MuEnrichedPt5.root 	QCD.root 	2526000.0	1.00	bg
+#../NanoAOD_Submission/Submission/QCD_Pt-30to50_MuEnrichedPt5.root 	QCD.root 	1362000.0	1.00	bg
+#../NanoAOD_Submission/Submission/QCD_Pt-50to80_MuEnrichedPt5.root 	QCD.root 	376600.0	1.00	bg
+#../NanoAOD_Submission/Submission/QCD_Pt-80to120_MuEnrichedPt5.root 	QCD.root 	88930.0		1.00	bg
+#../NanoAOD_Submission/Submission/QCD_Pt-120to170_MuEnrichedPt5.root 	QCD.root 	21230.0		1.00	bg
+#../NanoAOD_Submission/Submission/QCD_Pt-170to300_MuEnrichedPt5.root 	QCD.root 	7055.0		1.00	bg
+#../NanoAOD_Submission/Submission/QCD_Pt-300to470_MuEnrichedPt5.root	QCD.root	20.54		1.00	bg
+#../NanoAOD_Submission/Submission/QCD_Pt-470to600_MuEnrichedPt5.root 	QCD.root 	59.24		1.00	bg
+#../NanoAOD_Submission/Submission/QCD_Pt-600to800_MuEnrichedPt5.root 	QCD.root 	1559000.00	1.00	bg
+#../NanoAOD_Submission/Submission/QCD_Pt-800to1000_MuEnrichedPt5.root 	QCD.root 	351900.00	1.00	bg
+#../NanoAOD_Submission/Submission/QCD_Pt-1000toInf_MuEnrichedPt5.root 	QCD.root 	290700.00	1.00	bg
+
+
+
+# Single top
+../NanoAOD_Submission/Submission/ST_s-channel_4f_leptonDecays.root 		  SingleTop.root   3.680    1.00   bg
+../NanoAOD_Submission/Submission/ST_t-channel_antitop_4f_InclusiveDecays.root     SingleTop.root   80.95    1.00   bg
+../NanoAOD_Submission/Submission/ST_t-channel_top_4f_InclusiveDecays.root         SingleTop.root   136.02   1.00   bg
+../NanoAOD_Submission/Submission/ST_tW_antitop_5f_inclusiveDecays.root            SingleTop.root   38.06    1.00   bg
+../NanoAOD_Submission/Submission/ST_tW_top_5f_inclusiveDecays.root                SingleTop.root   38.06    1.00   bg
+
+# ttbar
+../NanoAOD_Submission/Submission/TTGJets.root		     t#bar{t}.root   3.697    1.0   bg
+../NanoAOD_Submission/Submission/TTTo2L2Nu.root	 	     t#bar{t}.root   88.29    1.0   bg
+../NanoAOD_Submission/Submission/TTToHadronic.root	     t#bar{t}.root   377.96    1.0   bg
+../NanoAOD_Submission/Submission/TTToSemiLeptonic.root	     t#bar{t}.root   365.34    1.0   bg
+../NanoAOD_Submission/Submission/TTWJetsToLNu.root	     t#bar{t}.root   0.2043    1.0   bg
+../NanoAOD_Submission/Submission/TTWJetsToQQ.root	     t#bar{t}.root   0.4062    1.0   bg
+../NanoAOD_Submission/Submission/TTZToLLNuNu_M-10.root	     t#bar{t}.root   0.2529    1.0   bg
+../NanoAOD_Submission/Submission/TTZToQQ.root		     t#bar{t}.root   0.5297    1.0   bg
+../NanoAOD_Submission/Submission/TTTT.root		     t#bar{t}.root   0.009    1.0   bg
+
+# W+jets
+#../NanoAOD_Submission/Submission/WJetsToLNu_HT-70To100.root		W+Jets.root	 1319.0		1.00	  bg
+../NanoAOD_Submission/Submission/WJetsToLNu_HT-100To200.root		W+Jets.root      1695.0		1.00      bg
+../NanoAOD_Submission/Submission/WJetsToLNu_HT-200To400.root		W+Jets.root      532.40		1.00      bg
+../NanoAOD_Submission/Submission/WJetsToLNu_HT-400To600.root		W+Jets.root      61.600         1.00      bg
+../NanoAOD_Submission/Submission/WJetsToLNu_HT-600To800.root		W+Jets.root      12.400         1.00      bg
+../NanoAOD_Submission/Submission/WJetsToLNu_HT-800To1200.root		W+Jets.root      5.7700         1.00      bg
+../NanoAOD_Submission/Submission/WJetsToLNu_HT-1200To2500.root		W+Jets.root      1.0230         1.00      bg
+../NanoAOD_Submission/Submission/WJetsToLNu_HT-2500ToInf.root		W+Jets.root      0.0248		1.00      bg
+
+# Diboson
+
+#../NanoAOD_Submission/Submission/WWTo2L2Nu_DoubleScattering.root  		VV.root	        10.480		1.00	bg
+../NanoAOD_Submission/Submission/WWTo2L2Nu_NNPDF31.root                        VV.root         10.480          1.00    bg
+../NanoAOD_Submission/Submission/WWTo4Q_NNPDF31.root   	                       VV.root         51.723          1.00    bg
+../NanoAOD_Submission/Submission/WWToLNuQQ_NNPDF31.root                        VV.root         43.530          1.00    bg
+
+../NanoAOD_Submission/Submission/WZTo1L1Nu2Q.root			VV.root		10.730		1.00	bg
+../NanoAOD_Submission/Submission/WZTo1L3Nu.root				VV.root		3.0540		1.00	bg
+../NanoAOD_Submission/Submission/WZTo2L2Q.root				VV.root		5.6060		1.00	bg
+../NanoAOD_Submission/Submission/WZTo3LNu.root				VV.root		4.4300		1.00 	bg
+
+../NanoAOD_Submission/Submission/ZZTo2L2Nu.root				VV.root		0.5644  	1.00	bg
+../NanoAOD_Submission/Submission/ZZTo2L2Q.root				VV.root		3.2220		1.00	bg
+../NanoAOD_Submission/Submission/ZZTo2Q2Nu.root				VV.root		4.0330		1.00	bg
+../NanoAOD_Submission/Submission/ZZTo4L.root				VV.root		1.2040		1.00	bg
+
+#Triboson
+../NanoAOD_Submission/Submission/WWW_4F.root                         VVV.root         0.2086          1.00    bg
+../NanoAOD_Submission/Submission/WWZ.root                          VVV.root         0.1651          1.00    bg
+../NanoAOD_Submission/Submission/WZZ.root                         VVV.root         0.05565          1.00    bg
+../NanoAOD_Submission/Submission/ZZZ.root                            VVV.root         0.01398          1.00    bg
+
+#VBS
+../NanoAOD_Submission/Submission/EWKWMinus2Jets_WToLNu_M-50.root	VBS.root	23.24	1.00	bg
+../NanoAOD_Submission/Submission/EWKWPlus2Jets_WToLNu_M-50.root		VBS.root        29.59   1.00    bg
+#../NanoAOD_Submission/Submission/EWKZ2Jets_ZToLL_M-50.root		VBS.root        23.24   1.00    bg
+#../NanoAOD_Submission/Submission/EWKZ2Jets_ZToNuNu.root		VBS.root        23.24   1.00    bg
+#../NanoAOD_Submission/Submission/LLAJJ_EWK_MLL-50_MJJ-120.root
+../NanoAOD_Submission/Submission/LNuAJJ_EWK_MJJ-120.root		VBS.root	0.5439 	1.00 	bg
+#../NanoAOD_Submission/Submission/WGJJToLNu_EWK_QCD.root
+../NanoAOD_Submission/Submission/WLLJJ_WToLNu_EWK.root		VBS.root	0.01628		1.0	bg
+#../NanoAOD_Submission/Submission/WpWpJJ_EWK.root
+#../NanoAOD_Submission/Submission/WpWpJJ_QCD.root
+../NanoAOD_Submission/Submission/WWJJToLNuLNu_EWK_noTop.root			VBS.root	0.3439	1.0	bg
+../NanoAOD_Submission/Submission/WWJJToLNuLNu_EWK_QCD_noTop-noHiggs.root	VBS.root        2.616   1.0     bg
+../NanoAOD_Submission/Submission/WWJJToLNuLNu_QCD_noTop.root			VBS.root      	2.423   1.0     bg
+../NanoAOD_Submission/Submission/ZGToLLG_01J_5f.root	VBS.root	55.48	1.0	bg
+
+
+
+#ggzh
+#../NanoAOD_Submission/Submission/ggZH_HToBB_ZToBB_M125.root
+#../NanoAOD_Submission/Submission/ggZH_HToBB_ZToLL_M125.root
+#../NanoAOD_Submission/Submission/ggZH_HToBB_ZToQQ_M125.root
+
+#GluGlu
+#../NanoAOD_Submission/Submission/GluGluHToBB_M-125.root
+#../NanoAOD_Submission/Submission/GluGluHToZZTo2L2Q_M125.root
+#../NanoAOD_Submission/Submission/GluGluHToZZTo4L_M125.root
+#../NanoAOD_Submission/Submission/GluGluToWWToENEN.root
+#../NanoAOD_Submission/Submission/GluGluToWWToENMN.root
+#../NanoAOD_Submission/Submission/GluGluToWWToENTN.root
+#../NanoAOD_Submission/Submission/GluGluToWWToMNEN.root
+#../NanoAOD_Submission/Submission/GluGluToWWToMNMN.root
+#../NanoAOD_Submission/Submission/GluGluToWWToMNTN.root
+#../NanoAOD_Submission/Submission/GluGluToWWToTNEN.root
+#../NanoAOD_Submission/Submission/GluGluToWWToTNMN.root
+#../NanoAOD_Submission/Submission/GluGluToWWToTNTN.root
+
+#rares
+
+../NanoAOD_Submission/Submission/ttH_HToZZ_4LFilter_M125.root	rares.root 	0.4989		1.0	bg
+../NanoAOD_Submission/Submission/ZH_HToBB_ZToLL_M125.root	rares.root	0.07523		1.0	bg
+../NanoAOD_Submission/Submission/ZH_HToBB_ZToQQ_M125.root	rares.root	0.5242		1.0	bg
+../NanoAOD_Submission/Submission/ZH_HToZZ_4LFilter_M125.root	rares.root	0.7927		1.0	bg
